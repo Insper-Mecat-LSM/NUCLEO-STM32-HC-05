@@ -4,4 +4,4 @@ Autor: Hugo Campos [link](https://github.com/HugocamposL3)
 
 ## Objetivo:
 
-- Verificar o funcionamento de um bluetooth HC-05 recebendo e enviando dados para a placa NUCLEO e usando um celular android.
+ Verificar o funcionamento de um bluetooth HC-05 recebendo e enviando dados para a placa NUCLEO e usando um celular android.
