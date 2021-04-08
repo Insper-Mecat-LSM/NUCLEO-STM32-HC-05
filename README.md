@@ -16,8 +16,8 @@ HC-05, onde a placa NUCLEO-F103RB fará a interface entre os led e os dados rece
 ### Prática 1:
 
 - Materiais Utilizados:
-1 - LDR.
-1 - RESISTOR de 10Kohm.
-1 - Bluetooth HC-05.
-1 - Protoboard.
-1 - NUCLEO-F103RB.
+- 1 - LDR.
+- 1 - RESISTOR de 10Kohm.
+- 1 - Bluetooth HC-05.
+- 1 - Protoboard.
+- 1 - NUCLEO-F103RB.
