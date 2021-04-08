@@ -28,5 +28,11 @@ Materiais Utilizados:
 - 1 - Protoboard.
 - 1 - NUCLEO-F103RB.
 
+### Esquemático da pratica:
+
+<a href="https://imgur.com/09kxomA"><img src="https://imgur.com/09kxomA.jpg" title="source: imgur.com" /></a>
+
+
+
 
 
