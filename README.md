@@ -28,9 +28,14 @@ Materiais Utilizados:
 - 1 - Protoboard.
 - 1 - NUCLEO-F103RB.
 
-### Esquemático da pratica:
+### Esquemático da prática:
 
 <a href="https://imgur.com/09kxomA"><img src="https://imgur.com/09kxomA.jpg" title="source: imgur.com" /></a>
+
+- Pino RX do Bluetooth HC-05 será ligado no pino PB_10 da NUCLEO-F103RB.
+- Pino TX do Bluetooth HC-05 será ligado no pino PB_11 da NUCLEO-F103RB.
+- Como tensão de entrada do Bluetooth HC-05 foi utilizado a tensão 3.3V direto da NUCLEO-F103RB.
+- A tensão de saida do Divisor de tensão entre o resistor de 10Kohm e o LDR foi conectada no Pino A0 da NUCLEO-F103RB.
 
 
 
