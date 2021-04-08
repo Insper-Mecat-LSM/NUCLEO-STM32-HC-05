@@ -15,6 +15,12 @@ HC-05, onde a placa NUCLEO-F103RB fará a interface entre os led e os dados rece
 
 ### Prática 1:
 
+Essa prática consiste em ler valores na porta analógica do microcontrolador de acordo com a iluminação do ambiente e esses valores serão lidos pelo o celular do usuário via bluetooth, para isso foi utilizado um componete chamado LDR. 
+### Mas o que é um LDR?
+É um resistor dependente de luz ou fotorresistência, conhecido pela sigla inglesa LDR (Light Dependent Resistor), é um componente eletrônico passivo do tipo resistor variável, mais especificamente, é um resistor cuja resistência varia conforme a intensidade da luz (iluminamento) que incide sobre ele.
+
+<a href="https://imgur.com/tghZ1u3"><img src="https://imgur.com/tghZ1u3.jpg" title="source: imgur.com" /></a>
+
 Materiais Utilizados:
 - 1 - LDR.
 - 1 - RESISTOR de 10Kohm.
@@ -22,8 +28,5 @@ Materiais Utilizados:
 - 1 - Protoboard.
 - 1 - NUCLEO-F103RB.
 
-### O que é um LDR:
-É um resistor dependente de luz ou fotorresistência, conhecido pela sigla inglesa LDR (Light Dependent Resistor), é um componente eletrônico passivo do tipo resistor variável, mais especificamente, é um resistor cuja resistência varia conforme a intensidade da luz (iluminamento) que incide sobre ele.
 
-<a href="https://imgur.com/ozot3Xb"><img src="https://imgur.com/ozot3Xb.jpg" title="source: imgur.com" /></a>
 
