@@ -21,3 +21,8 @@ Materiais Utilizados:
 - 1 - Bluetooth HC-05.
 - 1 - Protoboard.
 - 1 - NUCLEO-F103RB.
+
+### O que é um LDR:
+É um resistor dependente de luz ou fotorresistência, conhecido pela sigla inglesa LDR (Light Dependent Resistor), é um componente eletrônico passivo do tipo resistor variável, mais especificamente, é um resistor cuja resistência varia conforme a intensidade da luz (iluminamento) que incide sobre ele.
+
+
