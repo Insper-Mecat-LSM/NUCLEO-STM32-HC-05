@@ -15,10 +15,12 @@ O módulo Bluetooth HC-05 é uma forma mais limpa de comunicação entre uma par
 HC-06. Em sua placa existe um regulador de tensão e você poderá alimentar com 3.3 a 5v, bem como um LED que indica se o módulo está pareado com outro dispositivo. Possui alcance de até 10m.
 Antes de comunicar com o seu módulo você precisará pareá-lo com o dispositivo que desejas conectar. Isto vai variar dependendo do Sistema Operacional que você estará usando mas em termos gerais:
 
-1 - Habilite o Bluetooth do seu dispositivo.
-2 - Procure por outros dispositivos Bluetooth.
-3 - Procure por um dispositivo chamado 'linvor' e pareie com ele.
-4 - O código é '1234'
+- Habilite o Bluetooth do seu dispositivo.
+- Procure por outros dispositivos Bluetooth.
+- Procure por um dispositivo chamado 'linvor' e pareie com ele.
+- O código é '1234' ou '0000'.
+
+<a href="https://imgur.com/MC1hwwm"><img src="https://imgur.com/MC1hwwm.jpg" title="source: imgur.com" /></a>
 
 ## Prototipação:
 
