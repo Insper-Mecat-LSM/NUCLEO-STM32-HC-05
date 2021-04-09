@@ -48,7 +48,7 @@ Para que o microcontrolador possa ler essa variação de resistência do LDR de 
 ### O que é um divisor de tensão?
 Um divisor de tensão é um circuito simples de resistores em série. A tensão de saída é uma fração fixa da tensão de entrada se os dois resistores tiverem valores fixos, mas também pode ser variada que é o caso desse circuito pois o LDR muda a sua resistência de acordo com a luminosidade. O fator de divisão é determinado por dois resistores.
 
-<a href="https://imgur.com/T5d8Lpv"><img src="https://imgur.com/T5d8Lpv.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/zEuNNei"><img src="https://imgur.com/zEuNNei.jpg" title="source: imgur.com" /></a>
 
 - Pino RX do Bluetooth HC-05 será ligado no pino PB_10 da NUCLEO-F103RB.
 - Pino TX do Bluetooth HC-05 será ligado no pino PB_11 da NUCLEO-F103RB.
