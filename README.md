@@ -41,7 +41,7 @@ Materiais Utilizados:
 
 ### Esquemático da prática:
 
-<a href="https://imgur.com/09kxomA"><img src="https://imgur.com/09kxomA.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/EzGdWwn"><img src="https://imgur.com/EzGdWwn.jpg" title="source: imgur.com" /></a>
 
 ### Por que o LDR está ligado em série com um resistor ?
 Para que o microcontrolador possa ler essa variação de resistência do LDR de acordo com a luminosidade é necessário usar um divisor de tensão.
@@ -145,7 +145,7 @@ Materiais Utilizados:
 
 ### Esquemático da Prática:
 
-<a href="https://imgur.com/bJgrJTe"><img src="https://imgur.com/bJgrJTe.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/eBGpYk3"><img src="https://imgur.com/eBGpYk3.jpg" title="source: imgur.com" /></a>
 
 - Pino RX do Bluetooth será ligado no pino PB_10 da NUCLEO.
 - Pino TX do Bluetooth será ligado no pino PB_11 da NUCLEO.
