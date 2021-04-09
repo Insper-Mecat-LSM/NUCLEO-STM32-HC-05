@@ -109,17 +109,19 @@ até 1000.
 }
 ```
 
-Feito isso é só compilar e gravar na NUCLEO-F103RB. Para que o autor pudesse ler os valores na serial do bluetooth em seu celular ele utilizou um aplicativo 
+- Feito isso, é só compilar e gravar na NUCLEO-F103RB. Para que o autor pudesse ler os valores na serial do bluetooth em seu celular ele utilizou um aplicativo 
 chamado **Serial Bluetooth Terminal** foi baixado pela play Store e também pode ser utilizado o **Bluetooth Terminal** também baixado pela play store. Abaixo
 tem os dois aplicativos citados:
 
 <a href="https://imgur.com/i75ngjx"><img src="https://imgur.com/i75ngjx.jpg" title="source: imgur.com" /></a>
 <a href="https://imgur.com/eeJZd21"><img src="https://imgur.com/eeJZd21.jpg" title="source: imgur.com" /></a>
 
-Aplicativos funcionando mostrando os valores lidos:
+- Aplicativos funcionando mostrando os valores lidos:
 
 <a href="https://imgur.com/WqGSBWL"><img src="https://imgur.com/WqGSBWL.jpg" title="source: imgur.com" /></a>
 <a href="https://imgur.com/X656s1V"><img src="https://imgur.com/X656s1V.jpg" title="source: imgur.com" /></a>
+
+### Prática 2:
 
 
 
