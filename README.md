@@ -156,7 +156,7 @@ Materiais Utilizados:
 ### Escrevendo o Código:
 
 Esse código é diferente da **Prática 1** porque o HC-05 não vai enviar os dados ele vai receber os dados. O programa consiste em dizer para o microcontrolador o que fazer
-com determinados dados recebidos, por exemplo se o caracter **"A"** for recebido o led ligado no pino D0 vai acender ou apagar, no decorrer do código isso será mais detalhado.
+com determinados dados recebidos, por exemplo se o carácter **"A"** for recebido o led ligado no pino D0 vai acender ou apagar, no decorrer do código isso será mais detalhado.
 
 - 1º Passo: Import a biblioteca padrão do mBed.
 
@@ -176,7 +176,7 @@ DigitalOut led2 (D9);
 DigitalOut led3 (D8);
 ```
 
-- 4º Passo: Dentro do código Principal é necessário declarar uma variável tipo caracter **char** nomeada de **ch** nessa variável será gravada o dado enviado para o bluetooth 
+- 4º Passo: Dentro do código Principal é necessário declarar uma variável tipo carácter **char** nomeada de **ch** nessa variável será gravada o dado enviado para o bluetooth 
 e também é inicializado a comunicação serial do bluetooth com um baud rate de 9600 e também uma mensagem será mostrada na serial conectada ao bluetooth.
 
 ```javascript
