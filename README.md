@@ -95,7 +95,7 @@ int main(void)
     bt.printf("Codigo Carregado\n\r");
 ```
 
-- 7º Passo: No loop principal a variavel **ldrlido** receberá o valor lido pela o pino analógico do microcontrolador multiplicado por 1000 a cada 200ms, e esse valro será mostrado no leitor serial do bluetooth e também do computador. Nessa configuração quanto mais iluminado for o ambiente em que o usuário está, mas alto será o valor chegando 
+- 7º Passo: No loop principal a variavel **ldrlido** receberá o valor lido pela o pino analógico do microcontrolador multiplicado por 1000 a cada 200ms, e esse valor será mostrado no leitor serial do bluetooth e também do computador. Nessa configuração quanto mais iluminado for o ambiente em que o usuário está, mas alto será o valor chegando 
 até 1000.
 
 ```javascript
