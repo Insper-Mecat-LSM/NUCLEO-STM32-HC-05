@@ -35,7 +35,7 @@ Materiais Utilizados:
 ### Por que o LDR está ligado em série com um resistor ?
 Para que o microcontrolador possa ler essa variação de resistência do LDR de acordo com a luminosidade é necessário usar um divisor de tensão.
 ### O que é um divisor de tensão?
-Um divisor de tensão é um circuito simples de resistores em série. A tensão de saída é uma fração fixa da tensão de entrada. O fator de divisão é determinado por dois resistores.
+Um divisor de tensão é um circuito simples de resistores em série. A tensão de saída é uma fração fixa da tensão de entrada se os dois resistores tiveremm valores fixos, mas também pode ser variada que é o caso desse circuito pois o LDR muda a sua resitência de acordo com a luminosidade. O fator de divisão é determinado por dois resistores.
 
 <a href="https://imgur.com/T5d8Lpv"><img src="https://imgur.com/T5d8Lpv.jpg" title="source: imgur.com" /></a>
 
