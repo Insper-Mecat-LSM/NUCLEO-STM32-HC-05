@@ -76,6 +76,11 @@ Serial bt (PB_10, PB_11);
 AnalogIn LDR (A0);
 ```
 
+- 5º Passo: Declare uma variavel tipo INT para que o valor lido no pino analógico do microcontrolador seja gravado nela
+
+```javascript
+int ldrlido;
+```
 
 
 
