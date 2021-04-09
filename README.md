@@ -8,8 +8,7 @@ Autor: Hugo Campos [link](https://github.com/HugocamposL3)
  
  ## Introdução:
  
-Este tutorial tem o intuito de ensinar o leitor de uma forma clara e simples a usar um Bluetooth HC-05. A primeira prática é utilizar o HC-05 como transmissor de dados, ele basicamente irá enviar um valor lido na porta analógica da NUCLEO e o usuário receberá esse valor pelo o leitor serial do bluetooth. A segunda prática será ligar e desligar três leds comandados por dados enviados via bluetooth por um aplicativo android para um módulo 
-HC-05, onde a placa NUCLEO-F103RB fará a interface entre os led e os dados recebidos pelo módulo.
+Este tutorial tem o intuito de ensinar o leitor de uma forma clara e simples a usar um Bluetooth HC-05. A primeira prática é utilizar o HC-05 como transmissor de dados, ele basicamente irá enviar um valor lido na porta analógica da NUCLEO e o usuário receberá esse valor pelo o leitor serial do bluetooth. A segunda prática será ligar e desligar três leds comandados por dados enviados via bluetooth por um aplicativo android para um módulo HC-05, onde a placa NUCLEO-F103RB fará a interface entre os led e os dados recebidos pelo módulo.
 
 ## Prototipação:
 
@@ -64,7 +63,7 @@ Nesse código não é utilizado funções complexas e só com a biblioteca padr�
 Serial pc(USBTX, USBRX);
 ```
 
-- 3º Passo: Declare os pinos que serão utilizados para comunicação serial entre o módulo Bluetooth HC-05  e a placa NUCLEO-F103RB
+- 3º Passo: Declare os pinos que serão utilizados para comunicação serial entre o módulo Bluetooth HC-05 e a placa NUCLEO-F103RB
 
 ```javascript
 Serial bt (PB_10, PB_11);
@@ -122,7 +121,105 @@ tem os dois aplicativos citados:
 <a href="https://imgur.com/X656s1V"><img src="https://imgur.com/X656s1V.jpg" title="source: imgur.com" /></a>
 
 ### Prática 2:
+Nessa prática o usuário irá enviar um dado para o módulo Bluetooth pelo o celular, o microcontrolador conectado ao Bluetooth via serial também receberá esse dado e esse microcontrolador vai fazer a interface entre os valores recebidos e os leds conectados a placa NUCLEO-F103RB, dependendo do valor recebido os leds irão acender 
+ou apagar. 
 
+Materiais Utilizados:
+- 3 Leds.
+- 1 Placa NUCLEO-F103RB.
+- 1 Módulo Bluetooth HC-05.
+- 1 Protoboard.
+- 3 Resistores de 270ohm
 
+### Esquemático da Prática:
+
+<a href="https://imgur.com/bJgrJTe"><img src="https://imgur.com/bJgrJTe.jpg" title="source: imgur.com" /></a>
+
+- Pino RX do Bluetooth será ligado no pino PB_10 da NUCLEO.
+- Pino TX do Bluetooth será ligado no pino PB_11 da NUCLEO.
+- Para alimentar o Bluetooth foi utilizado a saída 3.3V da NUCLEO.
+- Os leds serão ligados nos D10, D9 e D8 da NUCLEO
+- O GND é o mesmo para o circuito todo, foi utilizado o GND da NUCLEO.
+
+### Escrevendo o Código:
+
+Esse código é diferente da **Prática 1** porque o HC-05 não vai enviar os dados ele vai receber os dados. O programa consiste em dizer para o microcontrolador o que fazer
+com determinados dados recebidos, por exemplo se o caracter **"A"** for recebido o led ligado no pino D0 vai acender ou apagar, no decorrer do código isso será mais detalhado.
+
+- 1º Passo: Import a biblioteca padrão do mBed.
+
+```javascript
+#include "mbed.h"
+```
+- 2º Passo: Declare os pinos que serão utilizados para comunicação serial entre o módulo Bluetooth HC-05 e a placa NUCLEO-F103RB.
+
+```javascript
+Serial bt (PB_10, PB_11);
+```
+- 3º Passo: Declare os pinos de saidas que serão ligados nos Leds.
+
+```javascript
+DigitalOut led1 (D10);
+DigitalOut led2 (D9);
+DigitalOut led3 (D8);
+```
+
+- 4º Passo: Dentro do código Principal é necessário declarar uma variavel tipo caracter **char** nomeada de **ch** nessa variavel será gravada o dado enviado para o bluetooth 
+e também é inicializado a comunicação serial do bluetooth com um baud rate de 9600 e também uma mensagem será mostrada na serial conectada ao bluetooth.
+
+```javascript
+int main(void)
+{
+    char ch;
+    
+    bt.baud(9600);
+
+    bt.printf("Codigo Carregado\r\n");
+```
+- 5º Passo: E por fim no loop principal o código vai verificar se tem algum carácter enviado para a serial do bluetooth, se sim, ele vai ler esse carácter e de acordo do que foi recebido o microcontrolador vai acionar ou desligar um led. 
+
+```javascript
+while(1)
+    {
+        if(bt.readable())
+        {
+            ch = bt.putc(bt.getc());
+            if (ch == 'A')
+            {
+                led1 = 1;
+                wait_ms(200);
+            }
+            else if (ch == 'B')
+            {
+                led1 = 0;
+                wait_ms(200);
+            }
+            else if (ch == 'C')
+            {
+                led2 = 1;
+                wait_ms(200);
+            }
+            else if (ch == 'D')
+            {
+                led2 = 0;
+                wait_ms(200);
+            }  
+            else if (ch == 'E')
+            {
+                led3 = 1;
+                wait_ms(200);
+            }  
+            else if (ch == 'F')
+            {
+                led3 = 0;
+                wait_ms(200);
+            }     
+        }
+    }
+}
+```
+- A letra **A** liga o Led 1, a letra **B** desliga o Led 1.
+- A letra **C** liga o led 2, a letra **D** desliga o Led 2.
+- A letra **E** liga o led 2, a letra **F** desliga o Led 3.
 
 
