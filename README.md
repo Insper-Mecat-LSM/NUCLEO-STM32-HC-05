@@ -87,7 +87,7 @@ Serial bt (PB_10, PB_11);
 AnalogIn LDR (A0);
 ```
 
-- 5º Passo: Declare uma variavel tipo INT para que o valor lido no pino analógico do microcontrolador seja gravado nela
+- 5º Passo: Declare uma variável tipo INT para que o valor lido no pino analógico do microcontrolador seja gravado nela
 
 ```javascript
 int ldrlido;
@@ -106,7 +106,7 @@ int main(void)
     bt.printf("Codigo Carregado\n\r");
 ```
 
-- 7º Passo: No loop principal a variavel **ldrlido** receberá o valor lido pela o pino analógico do microcontrolador multiplicado por 1000 a cada 200ms, e esse valor será mostrado no leitor serial do bluetooth e também do computador. Nessa configuração quanto mais iluminado for o ambiente em que o usuário está, mas alto será o valor chegando 
+- 7º Passo: No loop principal a variável **ldrlido** receberá o valor lido pela o pino analógico do microcontrolador multiplicado por 1000 a cada 200ms, e esse valor será mostrado no leitor serial do bluetooth e também do computador. Nessa configuração quanto mais iluminado for o ambiente em que o usuário está, mas alto será o valor chegando 
 até 1000.
 
 ```javascript
@@ -176,7 +176,7 @@ DigitalOut led2 (D9);
 DigitalOut led3 (D8);
 ```
 
-- 4º Passo: Dentro do código Principal é necessário declarar uma variavel tipo caracter **char** nomeada de **ch** nessa variavel será gravada o dado enviado para o bluetooth 
+- 4º Passo: Dentro do código Principal é necessário declarar uma variável tipo caracter **char** nomeada de **ch** nessa variável será gravada o dado enviado para o bluetooth 
 e também é inicializado a comunicação serial do bluetooth com um baud rate de 9600 e também uma mensagem será mostrada na serial conectada ao bluetooth.
 
 ```javascript
@@ -236,7 +236,7 @@ while(1)
 
 ### Mas como eu envio esses carácteres para o Módulo Bluetooth?
 
-Com os mesmos aplicativos que o celular lia os valores da variavel da prática 1, só que nesse código o celular não vai ler nada pelo o contrário ele vai enviar. Não se esqueça
+Com os mesmos aplicativos que o celular lia os valores da variável da prática 1, só que nesse código o celular não vai ler nada pelo o contrário ele vai enviar. Não se esqueça
 que nesse código todas as letras estão em maiúsculos.
 
 <a href="https://imgur.com/Wr4VgZP"><img src="https://imgur.com/Wr4VgZP.jpg" title="source: imgur.com" /></a>
