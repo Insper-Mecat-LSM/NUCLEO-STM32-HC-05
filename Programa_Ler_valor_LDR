@@ -1,0 +1,31 @@
+/*
+ *Objeitivo: Programa que usa o bluetooth HC-05 para enviar um valor lido na porta analógica da nucleo para o celular
+ *Autor:     Hugo Campos 
+ *Data:      08/04/2021
+ *Status:    Funcionando
+*/
+#include "mbed.h"
+ 
+Serial pc(USBTX, USBRX);
+Serial bt (PB_10, PB_11); 
+
+AnalogIn LDR (A0);
+
+int ldrlido;
+
+int main(void)
+{
+    pc.baud(9600);
+    bt.baud(9600);
+    
+    pc.printf("Codigo Carregado\n\r");
+    bt.printf("Codigo Carregado\n\r");
+    
+    while(1)
+    {
+        ldrlido = LDR.read()*1000;
+        pc.printf ("Valor do LDR: %d\n\r", ldrlido);
+        bt.printf ("Valor do LDR: %d\n\r", ldrlido);
+        wait_ms(200);
+    }
+}
