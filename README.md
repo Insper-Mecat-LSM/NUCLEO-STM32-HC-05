@@ -10,6 +10,16 @@ Autor: Hugo Campos [link](https://github.com/HugocamposL3)
  
 Este tutorial tem o intuito de ensinar o leitor de uma forma clara e simples a usar um Bluetooth HC-05. A primeira prática é utilizar o HC-05 como transmissor de dados, ele basicamente irá enviar um valor lido na porta analógica da NUCLEO e o usuário receberá esse valor pelo o leitor serial do bluetooth. A segunda prática será ligar e desligar três leds comandados por dados enviados via bluetooth por um aplicativo android para um módulo HC-05, onde a placa NUCLEO-F103RB fará a interface entre os led e os dados recebidos pelo módulo.
 
+### O que é um Módulo Bluetooth HC-05?
+O módulo Bluetooth HC-05 é uma forma mais limpa de comunicação entre uma parte móvel e um equipamento fixo, esse módulo suporta os modos Mestre e Escravo diferente do módulo
+HC-06. Em sua placa existe um regulador de tensão e você poderá alimentar com 3.3 a 5v, bem como um LED que indica se o módulo está pareado com outro dispositivo. Possui alcance de até 10m.
+Antes de comunicar com o seu módulo você precisará pareá-lo com o dispositivo que desejas conectar. Isto vai variar dependendo do Sistema Operacional que você estará usando mas em termos gerais:
+
+1 - Habilite o Bluetooth do seu dispositivo.
+2 - Procure por outros dispositivos Bluetooth.
+3 - Procure por um dispositivo chamado 'linvor' e pareie com ele.
+4 - O código é '1234'
+
 ## Prototipação:
 
 ### Prática 1:
@@ -227,7 +237,12 @@ while(1)
 Com os mesmos aplicativos que o celular lia os valores da variavel da prática 1, só que nesse código o celular não vai ler nada pelo o contrário ele vai enviar. Não se esqueça
 que nesse código todas as letras estão em maiúsculos.
 
-<a href="https://i.imgur.com/Wr4VgZPs"><img src="https://i.imgur.com/Wr4VgZPs.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/Wr4VgZP"><img src="https://imgur.com/Wr4VgZP.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/hfEmB43"><img src="https://imgur.com/hfEmB43.jpg" title="source: imgur.com" /></a>
 
-
+# Considerações Finais:
+Fazendo essa duas práticas o leitor vai poder operar o bluetooth em dois modos, como receptor de dados e também como transmissor de dados, isso pode ser muito útil em um projeto
+em que o usuário precise monitorar os status da sua linha de produção de uma forma que ele não precise ficar muito próximo da máquina, somente usando sensores, um módulo 
+bluetooth e um microcontrolador é possível receber esses dados pelo o seu celular. Em caso de alguma dúvida que o leitor tenha tido no decorrer desse tutorial entre em contato
+com o autor. 
 
