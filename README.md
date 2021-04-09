@@ -17,7 +17,7 @@ Antes de comunicar com o seu módulo você precisará pareá-lo com o dispositiv
 
 - Habilite o Bluetooth do seu dispositivo.
 - Procure por outros dispositivos Bluetooth.
-- Procure por um dispositivo chamado 'linvor' e pareie com ele.
+- Procure por um dispositivo chamado 'HC-05' e pareie com ele.
 - O código é '1234' ou '0000'.
 
 <a href="https://imgur.com/MC1hwwm"><img src="https://imgur.com/MC1hwwm.jpg" title="source: imgur.com" /></a>
