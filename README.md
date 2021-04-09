@@ -243,7 +243,7 @@ que nesse código todas as letras estão em maiúsculos.
 <a href="https://imgur.com/hfEmB43"><img src="https://imgur.com/hfEmB43.jpg" title="source: imgur.com" /></a>
 
 # Considerações Finais:
-Fazendo essa duas práticas o leitor vai poder operar o bluetooth em dois modos, como receptor de dados e também como transmissor de dados, isso pode ser muito útil em um projeto
+Fazendo essas duas práticas o leitor vai poder operar o bluetooth em dois modos, como receptor de dados e também como transmissor de dados, isso pode ser muito útil em um projeto
 em que o usuário precise monitorar os status da sua linha de produção de uma forma que ele não precise ficar muito próximo da máquina, somente usando sensores, um módulo 
 bluetooth e um microcontrolador é possível receber esses dados pelo o seu celular. Em caso de alguma dúvida que o leitor tenha tido no decorrer desse tutorial entre em contato
 com o autor. 
