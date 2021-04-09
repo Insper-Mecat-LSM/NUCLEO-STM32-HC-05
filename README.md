@@ -222,4 +222,12 @@ while(1)
 - A letra **C** liga o led 2, a letra **D** desliga o Led 2.
 - A letra **E** liga o led 2, a letra **F** desliga o Led 3.
 
+### Mas como eu envio esses carácteres para o Módulo Bluetooth?
+
+Com os mesmos aplicativos que o celular lia os valores da variavel da prática 1, só que nesse código o celular não vai ler nada pelo o contrário ele vai enviar. Não se esqueça
+que nesse código todas as letras estão em maiúsculos.
+
+<a href="https://i.imgur.com/Wr4VgZPs.jpg"><img src="https://i.imgur.com/Wr4VgZPs.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/bJgrJTe"><img src="https://imgur.com/bJgrJTe.jpg" title="source: imgur.com" /></a>
+
 
