@@ -1,6 +1,6 @@
 Autor: Hugo Campos [link](https://github.com/HugocamposL3)
 
-# Bluetooth HC-05 com Placa NUCLEO STM32 F103RB
+# Bluetooth HC-05 com Placa NUCLEO-F103RB
 
 ## Objetivo:
 
