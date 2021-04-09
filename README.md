@@ -82,6 +82,45 @@ AnalogIn LDR (A0);
 int ldrlido;
 ```
 
+- 6º Passo: Dentro do Código principal será inicializado a comunicação serial do microprocessador e também do Módulo Bluetooth HC-05 com um baud rate de 9600 e uma
+mensagem de inicialização será mostrada no leitor serial
+
+```javascript
+int main(void)
+{
+    pc.baud(9600);
+    bt.baud(9600);
+    
+    pc.printf("Codigo Carregado\n\r");
+    bt.printf("Codigo Carregado\n\r");
+```
+
+-7º Passo: No loop principal a variavel **ldrlido** receberá o valor lido pela o pino analógico do microcontrolador multiplicado por 1000 a cada 200ms, e esse valro será mostrado no leitor serial do bluetooth e também do computador. Nessa configuração quanto mais iluminado for o ambiente em que o usuário está, mas alto será o valor chegando 
+até 1000.
+
+```javascript
+ while(1)
+    {
+        ldrlido = LDR.read()*1000;
+        pc.printf ("Valor do LDR: %d\n\r", ldrlido);
+        bt.printf ("Valor do LDR: %d\n\r", ldrlido);
+        wait_ms(200);
+    }
+}
+```
+
+Feito isso é só compilar e gravar na NUCLEO-F103RB. Para que o autor pudesse ler os valores na serial do bluetooth em seu celular ele utilizou um aplicativo 
+chamado **Serial Bluetooth Terminal** foi baixado pela play Store e também pode ser utilizado o **Bluetooth Terminal** também baixado pela play store. Abaixo
+tem os dois aplicativos citados:
+
+<a href="https://imgur.com/i75ngjx"><img src="https://imgur.com/i75ngjx.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/eeJZd21"><img src="https://imgur.com/eeJZd21.jpg" title="source: imgur.com" /></a>
+
+Aplicativos funcionando mostrando os valores lidos:
+
+<a href="https://imgur.com/WqGSBWL"><img src="https://imgur.com/WqGSBWL.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/X656s1V"><img src="https://imgur.com/X656s1V.jpg" title="source: imgur.com" /></a>
+
 
 
 
